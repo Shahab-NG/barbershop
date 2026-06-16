@@ -127,13 +127,18 @@ const ExpertiseSection: React.FC = () => {
     <section
       id="expertise"
       ref={sectionRef}
-      className="relative py-32 md:py-44 bg-[#050505] overflow-hidden"
+      className="relative py-32 md:py-44 bg-[#05080e] overflow-hidden"
     >
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/35 to-transparent" />
+      {/* Ambient glow */}
+      <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-[#00d4ff] opacity-[0.05] blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-1/3 -right-40 w-[400px] h-[400px] rounded-full bg-[#0066ff] opacity-[0.04] blur-[120px] pointer-events-none" />
       {/* Background grid */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,212,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.025) 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }}
       />

@@ -60,10 +60,12 @@ const GallerySection: React.FC = () => {
     <section
       id="gallery"
       ref={sectionRef}
-      className="relative py-32 md:py-40 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-32 md:py-40 bg-[#0d0a05] overflow-hidden"
     >
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a227]/35 to-transparent" />
       {/* Ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#00d4ff] opacity-[0.02] blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[#c9a227] opacity-[0.04] blur-[160px] rounded-full pointer-events-none" />
 
       <div className="container-luxury mb-12">
         <div className="gallery-heading flex flex-col md:flex-row md:items-end justify-between gap-6">

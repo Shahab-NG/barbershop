@@ -39,13 +39,13 @@ const BookingSection: React.FC = () => {
 
       /* Shifting gradient orbs */
       const orbs = [
-        { x: 0.3 + Math.sin(t) * 0.15, y: 0.4 + Math.cos(t * 0.7) * 0.2, r: 0.55, color: "rgba(0,212,255,0.08)" },
-        { x: 0.7 + Math.cos(t * 1.1) * 0.15, y: 0.6 + Math.sin(t * 0.8) * 0.15, r: 0.5, color: "rgba(201,162,39,0.07)" },
+        { x: 0.3 + Math.sin(t) * 0.15, y: 0.4 + Math.cos(t * 0.7) * 0.2, r: 0.55, color: "rgba(0,212,255,0.13)" },
+        { x: 0.7 + Math.cos(t * 1.1) * 0.15, y: 0.6 + Math.sin(t * 0.8) * 0.15, r: 0.5, color: "rgba(201,162,39,0.11)" },
         {
           x: mouse.current.x * 0.6 + 0.2,
           y: mouse.current.y * 0.6 + 0.2,
           r: 0.35,
-          color: "rgba(0,212,255,0.06)",
+          color: "rgba(0,212,255,0.09)",
         },
       ]
 
@@ -87,6 +87,7 @@ const BookingSection: React.FC = () => {
       id="booking"
       ref={sectionRef}
       className="relative py-32 md:py-52 bg-[#050505] overflow-hidden"
+      style={{ borderTop: "1px solid rgba(0,212,255,0.12)" }}
     >
       {/* Animated canvas bg */}
       <canvas

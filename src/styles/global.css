@@ -7,8 +7,12 @@
   --black: #050505;
   --charcoal: #0a0a0a;
   --graphite: #111111;
-  --surface: #141414;
-  --border: #1e1e1e;
+  --surface: #181818;
+  --surface-warm: #161109;
+  --surface-cool: #090c18;
+  --border: #222222;
+  --dark-warm: #0d0a05;
+  --dark-cool: #05080e;
   --text: #f0f0f0;
   --text-dim: #888888;
   --blue: #00d4ff;
@@ -69,17 +73,17 @@ body {
 
 /* ── Glass ── */
 .glass {
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(20px) saturate(150%);
   -webkit-backdrop-filter: blur(20px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(40px) saturate(180%);
   -webkit-backdrop-filter: blur(40px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 /* ── Text gradients ── */

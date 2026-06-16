@@ -64,10 +64,12 @@ const ContactSection: React.FC = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-32 md:py-44 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-32 md:py-44 bg-[#05080e] overflow-hidden"
     >
-      {/* Top accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/15 to-transparent" />
+      {/* Ambient glow */}
+      <div className="absolute top-1/2 -translate-y-1/2 -right-40 w-[600px] h-[600px] rounded-full bg-[#00d4ff] opacity-[0.05] blur-[140px] pointer-events-none" />
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/35 to-transparent" />
 
       <div className="container-luxury">
         {/* Header */}

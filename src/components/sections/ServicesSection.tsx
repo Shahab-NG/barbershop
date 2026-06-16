@@ -59,15 +59,15 @@ interface CardProps {
   index: number
 }
 
-const ServiceCard: React.FC<CardProps> = ({ service, index }) => {
+const ServiceCard: React.FC<CardProps> = ({ service }) => {
   const [hovered, setHovered] = useState(false)
 
   return (
     <motion.article
-      className="relative bg-[#0f0f0f] border border-white/[0.05] p-8 md:p-10 flex flex-col cursor-pointer group overflow-hidden"
+      className="relative bg-[#161109] border border-white/[0.08] p-8 md:p-10 flex flex-col cursor-pointer group overflow-hidden"
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      whileHover={{ borderColor: "rgba(0,212,255,0.15)" }}
+      whileHover={{ borderColor: "rgba(201,162,39,0.25)" }}
       transition={{ duration: 0.3 }}
     >
       {/* Hover glow */}
@@ -163,9 +163,12 @@ const ServicesSection: React.FC = () => {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-32 md:py-40 bg-[#0a0a0a]">
-      {/* Top accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent to-[#00d4ff]/25" />
+    <section id="services" ref={sectionRef} className="relative py-32 md:py-40 bg-[#0d0a05]">
+      {/* Ambient warm glow */}
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/4 w-[600px] h-[600px] rounded-full bg-[#c9a227] opacity-[0.05] blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[400px] h-[400px] rounded-full bg-[#c9a227] opacity-[0.03] blur-[120px] pointer-events-none" />
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a227]/35 to-transparent" />
 
       <div className="container-luxury">
         {/* Header */}
@@ -189,9 +192,9 @@ const ServicesSection: React.FC = () => {
         </div>
 
         {/* Grid */}
-        <div className="svc-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04]">
+        <div className="svc-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#c9a227]/[0.06]">
           {SERVICES.map((s, i) => (
-            <div key={s.id} className="svc-card bg-[#0a0a0a]">
+            <div key={s.id} className="svc-card bg-[#0d0a05]">
               <ServiceCard service={s} index={i} />
             </div>
           ))}

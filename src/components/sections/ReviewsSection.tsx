@@ -107,11 +107,13 @@ const ReviewsSection: React.FC = () => {
     <section
       id="reviews"
       ref={sectionRef}
-      className="relative py-32 md:py-44 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-32 md:py-44 bg-[#0d0a05] overflow-hidden"
     >
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a227]/35 to-transparent" />
       {/* Glows */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#c9a227] opacity-[0.02] blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-[#00d4ff] opacity-[0.02] blur-[180px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[700px] h-[700px] rounded-full bg-[#c9a227] opacity-[0.055] blur-[180px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-[#c9a227] opacity-[0.03] blur-[160px] pointer-events-none" />
 
       <div className="container-luxury">
         {/* Header */}

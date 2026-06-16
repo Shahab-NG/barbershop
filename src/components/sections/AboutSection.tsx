@@ -66,9 +66,11 @@ const AboutSection: React.FC = () => {
       ref={sectionRef}
       className="relative py-32 md:py-44 bg-[#050505] overflow-hidden"
     >
+      {/* Top separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/30 to-transparent" />
       {/* Ambient glow */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-[#00d4ff] opacity-[0.025] blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 -translate-y-1/2 -right-40 w-[500px] h-[500px] rounded-full bg-[#c9a227] opacity-[0.025] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 -translate-y-1/2 -left-40 w-[600px] h-[600px] rounded-full bg-[#00d4ff] opacity-[0.06] blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 -translate-y-1/2 -right-40 w-[600px] h-[600px] rounded-full bg-[#c9a227] opacity-[0.05] blur-[130px] pointer-events-none" />
 
       <div className="container-luxury grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* ── Left: Text ── */}
